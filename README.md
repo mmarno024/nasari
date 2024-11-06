@@ -18,6 +18,11 @@
 
 ## Screenshot
 
+Video Demo
+
+[![Demo Video](https://i9.ytimg.com/vi_webp/CCMvXBlMqH4/mq2.webp?sqp=CLS1rrkG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYACrgWKAgwIABABGGUgWShWMA8=&rs=AOn4CLDQSb_nnh6FxlgHQA80Yoybyf_hgw)](https://www.youtube.com/watch?v=CCMvXBlMqH4)
+
+
 Login Page
 <img src="public/assets/ss_login.png" alt="Login">
 
