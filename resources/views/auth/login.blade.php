@@ -13,22 +13,36 @@
                 <h3><strong>Silakan Login</strong></h3>
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
-                    <div class="input-group">
-                        <i class="fas fa-envelope"></i>
-                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
-                            name="email" value="{{ old('email') }}" autocomplete="email" autofocus
-                            placeholder="Masukkan email" required>
-
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-1 d-flex align-items-center">
+                                <i class="fas fa-envelope" style="font-size: 24px;color: grey"></i>
+                            </div>
+                            <div class="col-sm-11 d-flex align-items-center">
+                                <input id="email" type="email"
+                                    class="form-control @error('email') is-invalid @enderror" name="email"
+                                    value="{{ old('email') }}" autocomplete="email" autofocus placeholder="Masukkan email"
+                                    required>
+                            </div>
+                        </div>
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
-                    <div class="input-group">
-                        <i class="fas fa-lock"></i>
-                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"
-                            name="password" autocomplete="current-password" placeholder="Masukkan password" required>
+
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-1 d-flex align-items-center">
+                                <i class="fas fa-lock" style="font-size: 24px;color: grey"></i>
+                            </div>
+                            <div class="col-sm-11 d-flex align-items-center">
+                                <input id="password" type="password"
+                                    class="form-control @error('password') is-invalid @enderror" name="password"
+                                    autocomplete="current-password" placeholder="Masukkan password" required>
+                            </div>
+                        </div>
 
                         @error('password')
                             <span class="invalid-feedback" role="alert">
